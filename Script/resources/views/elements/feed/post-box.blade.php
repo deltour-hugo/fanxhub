@@ -49,6 +49,8 @@
                             </div>
                         @endif
 
+                        // test git
+
                         <div class="pr-3 pr-md-3">
                             <a class="text-dark-r text-hover d-flex" onclick="PostsPaginator.goToPostPageKeepingNav({{$post->id}},{{$post->postPage}},'{{route('posts.get',['post_id'=>$post->id,'username'=>$post->user->username])}}')" href="javascript:void(0)">
                                 {{$post->created_at->diffForHumans(null,false,true)}}
